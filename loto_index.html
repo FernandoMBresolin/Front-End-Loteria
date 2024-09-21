@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loto_styles.css">
+    <title>Lotto</title>
+</head>
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+     <header>
+        <div>
+            <h1>Jogos Loteria</h1>
+        </div>
+    </header>
+    
+    <!-- Controle do banner de imagens -->
+    <section class="banner">         
+    </section>
+
+    <!-- Opções para adicionar um novo jogo -->
+    <section class="game1">                    
+            <button onclick="newGame1()" class="addBtn">Mega-Sena</button>      
+    </section>
+
+    <!-- Opções para adicionar um novo jogo -->
+    <section class="game2">        
+        <button onclick="newGame2()" class="addBtn">LotoFácil</button>
+    </section>
+
+    <section class="filter">
+        <label for="gameFilter">Filtrar por modalidade:</label>
+        <select id="gameFilter" onchange="filterGames()">
+            <option value="all">Todos</option>
+            <option value="Mega-Sena">Mega-Sena</option>
+            <option value="Lotofácil">Lotofácil</option>
+        </select>
+    </section>
+
+    <!-- Tabela com jogos existentes -->
+    <section class="games">
+        <table id="myTable">
+            <tr>
+                <th>Modalidade</th>
+                <th>Números</th>
+                <th>Índice</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="loto_scripts.js"></script>
+</body>
+
+</html>
